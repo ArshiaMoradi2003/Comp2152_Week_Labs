@@ -21,5 +21,12 @@ class Person:
 
 
 
-person1 = Person("Mark", "18", 24)
-print("The name of the person is: " + person1.name)  # No need for str() due to concatenation with a string
+person1 = Person("Mark", 20, 6)
+
+# version 1
+print("The name of the person is: " + str(person1.name))  # No need for str() due to concatenation with a string
+
+person1.name = "Alfred"
+print("The name of the person is: " + str(person1.name))
+
+print("Public " + str(person1.public_prop))
