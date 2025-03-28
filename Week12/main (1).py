@@ -1,9 +1,7 @@
 from mammal import Mammal
 from person import Person
-from mammal import Mammal
 from puma import Puma
 from tick import Tick
-from heart import Heart
 
 print("--- Creating just a mammal object --- ")
 just_mammal = Mammal(5)
@@ -17,8 +15,8 @@ print("Name is: " + str(person1.name))
 print("Age is: " + str(person1.age))
 print("Height is: " + str(person1.height))
 
-# Accessing heart through composition
-print("Heart rate: " + str(person1.heart.beats_per_minute))
+# ✅ Fix the typo
+print("Heart rate: " + str(person1.heart.beats_per_minutes))  # Corrected attribute name
 person1.heart.beat()
 person1.age = 25
 print(str(person1.name) + "'s new age is: " + str(person1.age))
